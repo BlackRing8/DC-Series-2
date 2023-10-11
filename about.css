@@ -1,0 +1,238 @@
+.home-about{
+    height: auto;
+    width: 100%;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-about .media-icons {
+    z-index: 888;
+    position: absolute;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+  }
+
+.home-about .media-icons a {
+    color: #3030D0;
+    font-size: 2em;
+    transition: 0.3s ease;
+  }
+
+  .home-about .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .home-about .media-icons a:hover {
+    transform: scale(2);
+  }
+
+.company{
+    width: 100%;
+    display: flex;
+}
+
+.con-logo1{
+    width: 50%;
+    text-align: end;
+}
+
+.con-logo2{
+    
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.con-logo1 .con-logo2{
+    height: 50vh;
+}
+
+.company .logo1{
+    width: 230px;
+    height: auto;
+}
+
+.company .logo2{
+    width: 200px;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .content-vm{
+    background-color: #ffc500;
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+    padding-bottom: 50px;   
+}
+
+.content-vm h2{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.content-vm h4{
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+.content-vm p{
+    color: white;
+    font-size: 1.3em;
+}
+
+.content .pv{
+    padding-left: 20px ;
+}
+
+.content-vm ul{
+    padding-left: 40px;
+    color: #fff;
+}
+
+.content-vm li{
+    margin: 5px;
+}
+
+.content .con-bidang{
+    background-color: #ffc500;
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50px; 
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.con-bidang img{
+    width: 270px;
+    margin-left: 135px;
+    padding: 20px;
+}
+
+.con-bidang h5{
+    color: #fff;
+    font-weight: 400;
+    margin-left:25px;
+    font-size: 1.3em;
+}
+.con-bidang ul{
+    color: white;
+    margin-left: 40px;
+}
+
+.con-bidang li{
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+@media (max-width: 1040px) {
+    .home-about .media-icons {
+        display: none;
+      }
+    
+      .home-about{
+        margin-top: 0;
+      }
+
+
+
+    .company .logo1{
+        width: 170px;
+        height: auto;
+    }
+    
+    .company .logo2{
+        width: 120px;
+        height: auto;
+    }
+    .content .content-vm{
+        background-color: #ffc500;
+        width: 100%;
+        height: auto;
+        border-radius: 50px;    
+    }
+
+    .content-vm h2{
+        color: black;
+        text-align: center;
+        padding: 30px;
+        font-weight: 600;
+        font-size: 2em;
+    }
+    
+    .content-vm h4{
+        color: black;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    .content-vm p{
+        color: black;
+        font-size: 1.2em;
+    }
+    
+    .content .pv{
+        padding:20px;
+        font-size: 1.2em;
+        color: black;
+    }
+    
+    .content-vm ul{
+        padding-left: 40px;
+        color: black;
+    }
+    
+    .content-vm li{
+        margin: 5px;
+        padding: 10px;
+
+    }
+
+    .content .con-bidang{
+        background-color: #ffc500;
+        width: 100%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .con-bidang img{
+        width: 270px;
+        margin-left: 35px;
+        padding: 20px;
+    }
+
+    .con-bidang h5{
+        color: black;
+        font-weight: 400;
+        margin-left:25px;
+        font-size: 1.2em;
+    }
+    .con-bidang ul{
+        color: black;
+        margin-left: 40px;
+    }
+    
+    .con-bidang li{
+        margin: 30px;
+        font-size: 1.2em;
+    }
+
+}

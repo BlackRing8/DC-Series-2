@@ -1,0 +1,529 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "fontDC";
+  src: url("font/Cocogoose Pro-trial.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 10px;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  transition: 0.5s ease;
+  background-color: #ffc500;
+}
+
+header .brand {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.brand img:hover {
+  transform: scale(1.3);
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #3030d0;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: "";
+  position: absolute;
+  background: #3030d0;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+}
+
+.home .media-icons a {
+  color: #3030d0;
+  font-size: 2em;
+  transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+  transform: scale(2);
+}
+
+/*  Foooter  */
+
+footer {
+  background-color: #ffb500;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 50px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 3em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footerNav ul a {
+  color: #000;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+.footerNav ul a:hover {
+  opacity: 0.5;
+}
+
+.footerBottom {
+  background-color: #ffa000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: #000;
+}
+
+.designer {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/* Home */
+
+.home {
+  margin-top: 45px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.logo-home {
+  width: 300px;
+  /* background-color: white; */
+}
+
+.main-home {
+  height: 100vh;
+  /* background-color: red; */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px 200px;
+}
+
+.text-home {
+  width: 100%;
+  /* background-color: yellow; */
+  margin-left: 10px;
+}
+.text-home h2 {
+  color: #000;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-home p {
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+
+.text-home a {
+  margin-left: 120px;
+  text-decoration: none;
+  background-color: #3030d0;
+  color: white;
+  padding: 5px 22px;
+  font-size: 1.2em;
+  border-radius: 115px;
+  opacity: 1;
+}
+
+.text-home a:hover {
+  opacity: 0.5;
+}
+
+/* Section kedua */
+
+.wrapper {
+  background-color: #ffc500;
+
+  width: 100%;
+  height: 140vh;
+  margin: 0;
+}
+
+.wrapper h1 {
+  color: white;
+  font-family: fontDC;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+.column {
+  flex: 1;
+  border-radius: 25px;
+  margin: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: #00deb5;
+  transition: 0.3s;
+}
+
+.column h3 {
+  background-color: #3030d0;
+  text-align: center;
+  padding: 8px;
+  color: #ffc500;
+}
+
+.column p {
+  color: white;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.column .p2 {
+  color: yellow;
+}
+
+.column img {
+  width: 200px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.p2 a {
+  text-decoration: none;
+  background-color: #3030d0;
+  color: white;
+  margin-left: 100px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+/* Struktur ke bawah */
+
+.struktur {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #ffc500;
+}
+
+.column-struktur {
+  padding-top: 70px;
+  padding-bottom: 30px ;
+}
+
+.column-struktur h1 {
+  text-decoration: underline;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #3030d0;
+}
+
+.rounded-float-start {
+  width: 200px;
+  margin-top: 20px;
+  border: solid 5px #3030d0;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.rounded {
+  width: 200px;
+  border: solid 5px #3030d0;
+  border-radius: 50%;
+  background-color: white;
+  margin: 10px;
+}
+
+.struktur-image {
+  border: 25px;
+  margin-top: 30px;
+}
+
+.struktur-image2 {
+  border-radius: 50%;
+  border: 25px;
+  margin-top: 50px;
+}
+
+/* Untuk responsive web */
+
+@media (max-width: 1040px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .home .media-icons {
+    right: 15px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before {
+    background: #222;
+    height: 3px;
+  }
+
+  header .navigation.active .navigation-items {
+    background: #fff;
+    width: 500px;
+    max-width: 500px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1 / 20%);
+  }
+
+  .menu-btn {
+    background: url(asset/list-01.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active {
+    z-index: 999;
+    background: url(asset/silang.png) no-repeat;
+    background-size: 35px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+
+  .home .media-icons {
+    margin-top: 100px;
+    font-size: 1.5em;
+    display: none;
+  }
+
+  .footerNav ul {
+    flex-direction: column;
+  }
+
+  .footerNav ul a {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .socialIcons a {
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-home h2,
+  .text-home p,
+  .text-home a {
+    margin-left: 0; /* Menghapus margin kiri pada layar kecil */
+  }
+
+  /* Gaya asli untuk layar dengan lebar lebih dari 1080px */
+
+  .home {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo-home {
+    width: 150px; /* Menggunakan max-width agar gambar tidak melebihi 200px */
+  }
+
+  .main-home {
+    padding: 0px 0px;
+    flex-direction: column;
+  }
+
+  .text-home h2 {
+    line-height: 35px;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .text-home p {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+
+  .text-home a {
+    padding: 15px 30px;
+  }
+
+  .wrapper {
+    height: auto;
+  }
+
+  .wrapper h1{
+    padding: 0;
+  }
+
+  .p2 a {
+    text-decoration: none;
+    background-color: #3030d0;
+    color: white;
+    margin-left: 30px;
+    padding: 5px;
+    border-radius: 25px;
+  }
+
+  .struktur {
+    display: none;
+  }
+
+  .rounded {
+    display: none;
+  }
+
+  .column{
+    margin: 50px auto;
+  }
+}

@@ -235,4 +235,22 @@
         font-size: 1.2em;
     }
 
+    .struktur-image2 {
+    display: none;
+    
+  }
+
+  .struktur-image {
+    
+    
+  }
+
+    .column-struktur{
+    padding: 0;
+}
+
+.rounded-float-start {
+    display: none;
+}
+
 }

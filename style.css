@@ -326,7 +326,7 @@ footer {
 
 .column-struktur {
   padding-top: 70px;
-  padding-bottom: 30px ;
+  padding-bottom: 30px;
 }
 
 .column-struktur h1 {
@@ -419,7 +419,7 @@ footer {
   }
 
   .menu-btn {
-    background: url(asset/list-01.png) no-repeat;
+    background: url(Asset/list-01.png) no-repeat;
     background-size: 70px;
     background-position: center;
     width: 40px;
@@ -430,7 +430,7 @@ footer {
 
   .menu-btn.active {
     z-index: 999;
-    background: url(asset/silang.png) no-repeat;
+    background: url(Asset/silang.png) no-repeat;
     background-size: 35px;
     background-position: center;
     transition: 0.3s ease;
@@ -502,7 +502,7 @@ footer {
     height: auto;
   }
 
-  .wrapper h1{
+  .wrapper h1 {
     padding: 0;
   }
 
@@ -523,7 +523,7 @@ footer {
     display: none;
   }
 
-  .column{
+  .column {
     margin: 50px auto;
   }
 }
